@@ -2,64 +2,54 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V07XN2PE74"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-V07XN2PE74');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V07XN2PE74"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-V07XN2PE74');
+    </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4259330608514765"
-crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
     <meta charset="utf-8">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png?v=5">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v=5">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png?v=5">
-<link rel="manifest" href="/assets/favicons/site.webmanifest?v=5">
-<link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg?v=5" color="#114499">
-<link rel="shortcut icon" href="/assets/favicons/favicon.ico?v=5">
-<meta name="apple-mobile-web-app-title" content="InfinityGamer">
-<meta name="application-name" content="InfinityGamer">
-<meta name="msapplication-TileColor" content="#224679">
-<meta name="msapplication-config" content="/assets/favicons/browserconfig.xml?v=5">
-<meta name="theme-color" content="#114499">
 
-    <title>InfinityGamer</title>
+    <title>InfintiumGames</title>
+
     <link rel="stylesheet" type="text/css" href="../assets/css/global.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/games/games.css">
   </head>
   <body>
     <iframe src="../assets/navbar.html" frameborder="0" scrolling="no" width="100%" height="100px"></iframe>
     <h1>Games</h1>
-      <!-- Start of CuterCounter Code -->
-<a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=hvxpocxa&nd=9&style=92" border="0" alt="visitor counter"></a>
- <br>
- <p>Page views</p>
-  <!-- End of CuterCounter Code -->
- <br>
+
+    <!-- Start of CuterCounter Code -->
+    <a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=hmxqxpxk&nd=6&style=31" border="0" alt="visitor counter"></a>
+    <br>
+    <p>Page views</p>
+    <!-- End of CuterCounter Code -->
+    <br>
 
     <input type="text" id="searchInput" placeholder="Search games...">
-
     <button onclick="showCategories();" style="height: 50px;">Categories</button>
-    
-  
+
     <div id="random-most-played-game-container">
+      <div id="random-game-container">
+        <div id="together">
+          <p>Random game</p>
+          <div id="svg-container"></div>
+          <img class="material-icon" id="rerollRandom" onclick="rerollRandom()" src="../assets/images/dice/6.svg">
+        </div>
+      </div>
+      <div id="most-played-game-container">
+        <p>Most played game</p>
+      </div>
+    </div>
     
-    <div id="random-game-container">
-      <div id="together"><p>Random game</p><div id="svg-container"></div><img class="material-icon" id="rerollRandom" onclick="rerollRandom()" src="../assets/images/dice/6.svg"></div>
-    </div>
-    <div id="most-played-game-container">
-      <p>Most played game</p>
-    </div>
-  </div>
-  </div>
     <div id="games-wrapper"></div>
     <p id="game-count">Game count: </p>
-    
+
     <script src="../assets/js/games/gameNames.js"></script>
     <script src="../assets/js/games/games.js?v=2"></script>
-
     <script src="../assets/js/global.js"></script>
   </body>
 </html>
