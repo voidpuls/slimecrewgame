@@ -9,4 +9,4 @@ assignees: ''
 
 ___Game Title:___
 
-___What's Wrong:__
+___What's Wrong:___
