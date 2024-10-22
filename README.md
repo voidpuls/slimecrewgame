@@ -1,7 +1,7 @@
 # LupineVault
 A collection over over 350 games written in HTML5
 
-There are currently ```391``` games in the LupineVault. They may not all be on the repo _yet_, as they take up an enormous amount of space and will take a long time to fully copy to a repo.
+There are currently ```392``` games in the LupineVault. They may not all be on the repo _yet_, as they take up an enormous amount of space and will take a long time to fully copy to a repo.
 
 ---
 ## Want to contribute? Listen up:
