@@ -1,4 +1,4 @@
-# LupineVault
+![LupineVault Title](https://github.com/LupineVault/LupineVault/blob/107e183129cce25a489fe3ea65fa1797255e0d85/tinyTitle.png)
 A collection over over 350 games written in HTML5
 
 There are currently ```392``` games in the LupineVault. They may not all be on the repo _yet_, as they take up an enormous amount of space and will take a long time to fully copy to a repo.
