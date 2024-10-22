@@ -18,10 +18,12 @@ There are currently ```392``` games in the LupineVault. They may not all be on t
 
 #### How to get it in the vault:
 
-- Email me using the link in my profile
-              _or_
-- Start a new issue with the title ```Game Addition```
-- Can either be a ZIP file _or_ GitHub repo, ***No download links besides GitHub***
+  Email me using the link in my profile
+  
+___or___
+
+  Start a new issue [HERE](https://github.com/LupineVault/LupineVault/issues/new?assignees=InfinityLoop1%2C+tf7software&labels=enhancement%2C+New+Game&projects=&template=game-addition.md&title=Game+Addition+%5BGame+Title%5D)
+    <br><br>Can either be a ZIP file _or_ GitHub repo, ***No download links besides GitHub***
 
 ---
 Inspired by InfinityLoop's [InfinityGamer](https://github.com/InfinityGamer-Game-Site) site, and was started by [tf7software](https://github.com/tf7software) and [InfinityLoop](https://github.com/InfinityLoop1)
