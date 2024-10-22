@@ -24,8 +24,8 @@ There are currently ```392``` games in the LupineVault. They may not all be on t
 - Can either be a ZIP file _or_ GitHub repo, ***No download links besides GitHub***
 
 ---
+Inspired by [InfinityLoop's](https://github.com/InfinityLoop1) [InfinityGamer](https://github.com/InfinityGamer-Game-Site) site 
 
-Inspired by [InfinityLoop's]() [InfinityGamer]() site 
+Games from [NZP](https://github.com/nzp-team), [Eaglercraft](https://eaglercraft.com/), and [HTML-Games-V2](https://github.com/tw31122007/HTML-Games-V2)
 
-Games from [NZP](), [Eaglercraft](), and [HTML-Games-V2]()
 
