@@ -17,4 +17,5 @@ function makeFullscreen() {
 
 document.addEventListener('DOMContentLoaded', function (e) {
     document.getElementById("gameFrame").src = "files/" + searchParam + "/index.html";
+    document.getElementById("sourceViewLink").href = "files/" + searchParam + "/index.html";
 });

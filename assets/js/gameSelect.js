@@ -49,6 +49,8 @@ document.addEventListener("DOMContentLoaded", async function (e) {
         gameContainer.appendChild(createGameBox(gameName));
     });
 
+    document.getElementById("gameCount").textContent = "There are currently " + gameNames.length + " games in the LupineVault.";
+
     document.getElementById("searchInput").addEventListener("input", filterGames);
 });
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 $accent: #5e17eb;
 $accent-light: #7c43ec;
@@ -7,7 +7,7 @@ $text-color: #d5cde4;
 $background-color: #252025;
 
 body {
-    background-color:   $background-color;
+    background-color: $background-color;
     color: $text-color;
     text-align: center;
     font-family: "Open Sans";
@@ -29,10 +29,12 @@ body {
 
 #bigPlayButton {
     background: linear-gradient(90deg, #26134d, #281255);
-    color: #EEEEEE;
+    color: #eeeeee;
     font-size: 500%;
     padding: 50px;
-    text-shadow: 0 0 10px $accent-light, 0 0 20px $accent-light, 0 0 30px $accent, 0 0 40px $accent, 0 0 50px $accent, 0 0 60px $accent, 0 0 70px $accent;
+    text-shadow: 0 0 10px $accent-light, 0 0 20px $accent-light,
+        0 0 30px $accent, 0 0 40px $accent, 0 0 50px $accent, 0 0 60px $accent,
+        0 0 70px $accent;
     border-radius: 20px;
     border: none;
     filter: drop-shadow(0 0 50px $accent-dark);
@@ -56,7 +58,7 @@ a {
 }
 
 a:hover {
-    text-underline-offset: 0px;
+    text-underline-offset: 1px;
 }
 
 ::placeholder {
@@ -78,4 +80,20 @@ input {
     background-color: $accent-dark;
     padding: 5px 10px;
     border-radius: 0 0 0 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: $accent-dark;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $accent-light;
+    border-radius: 10px 0 0 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $text-color;
 }
