@@ -1,6 +1,6 @@
 let gameContainer = document.getElementById("gameContainer");
 
-const repo = 'LupineVault/LupineVault'; // Replace with your repo
+const repo = "LupineVault/LupineVault"; // Replace with your repo
 const baseUrl = `https://api.github.com/repos/${repo}/contents/`;
 
 async function fetchFiles(dir) {
@@ -9,8 +9,6 @@ async function fetchFiles(dir) {
     console.log(data);
     return data;
 }
-
-
 
 function createGameBox(gameName) {
     const gameImg = `../assets/images/games/${gameName}.png`;
@@ -30,18 +28,27 @@ function createGameBox(gameName) {
     return gameBox;
 }
 
-document.addEventListener('DOMContentLoaded', async function (e) {
+function filterGames() {
+    const filterValue = this.value.toLowerCase();
+    document.querySelectorAll(".gameBox").forEach(function (gameBox) {
+        const gameText = gameBox.textContent.toLowerCase();
+        gameBox.style.display = gameText.includes(filterValue)
+            ? "block"
+            : "none";
+    });
+}
+
+document.addEventListener("DOMContentLoaded", async function (e) {
     gameNames = await fetchFiles("games/files");
 
-    gameNames = gameNames.map(obj => obj.name);
-    
+    gameNames = gameNames.map((obj) => obj.name);
+
     gameNames.sort();
 
     gameNames.forEach(function (gameName) {
         gameContainer.appendChild(createGameBox(gameName));
     });
+
+    document.getElementById("searchInput").addEventListener("input", filterGames);
 });
-
-
-
 

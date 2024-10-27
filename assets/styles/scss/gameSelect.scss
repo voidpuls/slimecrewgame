@@ -1,3 +1,5 @@
+@use "global";
+
 #gameContainer {
     display: flex;
     gap: 20px;
@@ -11,7 +13,7 @@
     width: 200px;
     height: 200px;
     border-radius: 10px;
-    filter: drop-shadow(0 0 10px #4f13c7);
+    filter: drop-shadow(0 0 10px global.$accent-light);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -28,6 +30,12 @@
 }
 
 .gameBox:hover {
-    transform: scale(1.1);
+    transform: scale(1.25, 1.25);
+    z-index: 2;
 }
 
+#searchInput {
+    width: 25vw;
+    height: 25px;
+    border-radius: 10px;
+}
