@@ -18,4 +18,5 @@ function makeFullscreen() {
 document.addEventListener('DOMContentLoaded', function (e) {
     document.getElementById("gameFrame").src = "files/" + searchParam + "/index.html";
     document.getElementById("sourceViewLink").href = "files/" + searchParam + "/index.html";
+    document.getElementById("downloadFilesLink").href = "https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2FLupineVault%2FLupineVault%2Ftree%2Fmain%2Fgames%2Ffiles%2F" + searchParam;
 });
