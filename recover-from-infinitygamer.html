@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECOVERY FROM INFINITYGAMER</title>
+</head>
+
+<body>
+    <input type="file" id="fileInput">
+    <p id="confirmation"></p>
+    <p>Due to the move, some game saves may be lost unfortunately. Sorry for any inconvenience.</p>
+    <script>
+        const fileInput = document.getElementById("fileInput");
+
+        fileInput.addEventListener("change", () => {
+            if (fileInput.files.length > 0) {
+                const file = fileInput.files[0];
+                const reader = new FileReader();
+
+                reader.onload = (event) => {
+                    try {
+                        const data = JSON.parse(event.target.result);
+                        for (const key in data) {
+                            localStorage.setItem(key, data[key]);
+                        }
+                        document.getElementById("confirmation").textContent = "Saved!";
+                    } catch (e) {
+                        console.error("Error parsing JSON:", e);
+                        document.getElementById("confirmation").textContent = "Invalid JSON format!";
+                    }
+                };
+
+                reader.onerror = (event) => {
+                    console.error("File could not be read: " + event.target.error.code);
+                };
+
+                reader.readAsText(file); // Read the file as text
+            } else {
+                console.log("File input cleared");
+            }
+        });
+    </script>
+</body>
+</html>
