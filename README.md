@@ -4,6 +4,14 @@ A collection over over 350 games written in HTML5
 
 There are currently ```393``` games in the LupineVault. They may not all be on the repo _yet_, as they take up an enormous amount of space and will take a long time to fully copy to a repo.
 
+---
+### Pesky game blocker? No problem.
+Copy this code and paste it into your browser. May not bypass all web blockers.
+```
+data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiID8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMTI4MCA3MjAiPgogICAgPHRpdGxlPkdvb2dsZTwvdGl0bGU+CiAgICA8Zm9yZWlnbk9iamVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICAgICAgICA8ZW1iZWQgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHNyYz0iaHR0cHM6Ly9sdXBpbmV2YXVsdC5jb20vIiB0eXBlPSJ0ZXh0L3BsYWluIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiAvPgogICAgPC9mb3JlaWduT2JqZWN0Pgo8L3N2Zz4K
+```
+
+---
 ## Want to contribute? Listen up
 
 ### Requirements
