@@ -1,8 +1,13 @@
 # ![LupineVault Title](assets/images/tinyTitle.png)
 
+#### Discord
+[![Join Our Discord](https://img.shields.io/badge/Join%20Our-Discord-blue)](https://discord.gg/Ex2nZUWuHF)
+
+
 A collection over over 350 games written in HTML5
 
 There are currently ```393``` games in the LupineVault. They may not all be on the repo _yet_, as they take up an enormous amount of space and will take a long time to fully copy to a repo.
+
 
 ---
 ### Pesky game blocker? No problem.
@@ -26,7 +31,7 @@ data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiID8+Cj
 
 ### How to get it in the vault
 
-  Email me using the link in my profile
+  Contact us on ![Discord](#Discord)
   
 ___or___
 
