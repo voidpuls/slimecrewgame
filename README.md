@@ -31,7 +31,7 @@ data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiID8+Cj
 
 ### How to get it in the vault
 
-  Contact us on ![Discord](#Discord)
+  Contact us using [Discord](https://discord.gg/Ex2nZUWuHF)
   
 ___or___
 
