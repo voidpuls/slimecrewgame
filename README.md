@@ -50,6 +50,12 @@ ___or___
 
 ---
 
+## What about a fork?
+### Requirements:
+
+You must use (by copy-and-pastng ___exactly___) the same licence
+You must copy the readme ___exactly___
+
 Inspired by InfinityLoop's [InfinityGamer](https://github.com/InfinityGamer-Game-Site) site, and was started by [tf7software](https://github.com/tf7software) and [InfinityLoop](https://github.com/InfinityLoop1)
 
 Games from [NZP](https://github.com/nzp-team), [Eaglercraft](https://eaglercraft.com/), and [HTML-Games-V2](https://github.com/tw31122007/HTML-Games-V2)
