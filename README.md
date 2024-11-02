@@ -26,6 +26,8 @@ learningminds.tech
 
 More to come...
 
+<sub>Pssst! Want to host an alt domain? Fork this repo (follow the instructions below), then meet [THESE](https://github.com/LupineVault/LupineVault/blob/f5b59cc4d92dce3a9fad592e2a17b6407efae7ee/altdomain.md) requirements!</sub>
+
 ---
 ## Want to contribute? Listen up
 
