@@ -55,6 +55,8 @@ ___or___
 
 - You must use (by copy-and-pastng ___exactly___) the licence below
 - You must use (by copy-and-pastng ___exactly___) the reademe below
+- You must include attribution for this repo, tf7software, and InfinityLoop on index.html
+- You must include a attribution.txt file at domain.extention/attribution.txt
 
 #### README (for forks):
 ```
