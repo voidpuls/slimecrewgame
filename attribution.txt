@@ -1,0 +1,5 @@
+InfinityLoop (https://github.com/InfinityLoop1) - Mostly Frontend
+
+tf7software (https://github.com/tf7software) - Mostly backend & repository management
+
+Organization - LupineVault (https://github.com/LupineVault/)
