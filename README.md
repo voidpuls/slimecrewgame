@@ -53,8 +53,8 @@ ___or___
 ## What about a fork?
 ### Requirements:
 
-- You must use (by copy-and-pastng ___exactly___) the licence below
-- You must use (by copy-and-pastng ___exactly___) the reademe below
+- You must use (by copy-and-pastng ___exactly___) the licence [HERE](https://github.com/LupineVault/LupineVault/blob/05bcda1cf4677d5bff6970c6c6e317876af9b372/forks.md)
+- You must use (by copy-and-pastng ___exactly___) the reademe [HERE](https://github.com/LupineVault/LupineVault/blob/05bcda1cf4677d5bff6970c6c6e317876af9b372/forks.md)
 - You must include attribution for this repo, tf7software, and InfinityLoop on index.html
 - You must include a attribution.txt file at domain.extention/attribution.txt
 
