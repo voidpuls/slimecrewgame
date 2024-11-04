@@ -4,7 +4,7 @@
 [![Join Our Discord](https://img.shields.io/badge/Join%20Our-Discord-blue)](https://discord.gg/Ex2nZUWuHF)
 
 
-A collection over over 350 games written in HTML5
+A collection of over 350 games written in HTML5
 
 There are currently ```393``` games in the LupineVault.
 
@@ -18,7 +18,7 @@ data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiID8+Cj
 
 # Alt Domains:
 ```
-lupinevault.netlify.app.
+lupinevault.netlify.app
 ```
 ```
 learningminds.tech
@@ -34,7 +34,7 @@ More to come...
 ### Requirements
 
 - Must be able to run statically
-- Must run off of one (1) index.html _or_ main.html (You can have as many files as you want, but there must be only one _entry_ file).
+- Must contain and run on an index.html file
 - Can be online
 - Can be mature
 
@@ -56,9 +56,9 @@ ___or___
 ### Requirements:
 
 - You must use (by copy-and-pastng ___exactly___) the licence [HERE](https://github.com/LupineVault/LupineVault/blob/05bcda1cf4677d5bff6970c6c6e317876af9b372/forks.md)
-- You must use (by copy-and-pastng ___exactly___) the reademe [HERE](https://github.com/LupineVault/LupineVault/blob/05bcda1cf4677d5bff6970c6c6e317876af9b372/forks.md)
+- You must use (by copy-and-pastng ___exactly___) the README [HERE](https://github.com/LupineVault/LupineVault/blob/05bcda1cf4677d5bff6970c6c6e317876af9b372/forks.md)
 - You must include attribution for this repo, tf7software, and InfinityLoop on index.html
-- You must include a attribution.txt file at domain.extention/attribution.txt
+- You must include a attribution.txt file at domain.extension/attribution.txt
 
 Inspired by InfinityLoop's [InfinityGamer](https://github.com/InfinityGamer-Game-Site) site, and was started by [tf7software](https://github.com/tf7software) and [InfinityLoop](https://github.com/InfinityLoop1)
 
