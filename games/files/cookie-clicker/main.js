@@ -13673,21 +13673,3 @@ Game.Launch();
 //try {Game.Launch();}
 //catch(err) {console.log('ERROR : '+err.message);}
 
-window.onload = function() {
-    if (!Game.ready) {
-        if (top != self) {
-            // Game.ErrorFrame(); // Comment this out to bypass the iframe restriction
-        } else {
-            console.log('[=== ' + choose([
-                'Oh, hello!',
-                'hey, how\'s it hangin',
-                'About to cheat in some cookies or just checking for bugs?',
-                'Remember : cheated cookies taste awful!',
-                'Hey, Orteil here. Cheated cookies taste awful... or do they?'
-            ]) + ' ===]');
-            Game.Load();
-        }
-    }
-};
-
-
