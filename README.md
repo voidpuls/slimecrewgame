@@ -65,3 +65,6 @@ Can either be a ZIP file _or_ GitHub repo, __No download links besides GitHub__
 Inspired by InfinityLoop's [InfinityGamer](https://github.com/InfinityGamer-Game-Site) site, and was started by [tf7software](https://github.com/tf7software) and [InfinityLoop](https://github.com/InfinityLoop1)
 
 Games from [NZP](https://github.com/nzp-team), [Eaglercraft](https://eaglercraft.com/), and [HTML-Games-V2](https://github.com/tw31122007/HTML-Games-V2)
+
+# Disclamer:
+All games on LupineVault have been aquired from GitHub and/or __Legal Sources__, if you have a game on LupineVault that you want taken down, please contact using an ISSUE
