@@ -49,7 +49,8 @@ More to come...
 ___or___
 
   Start a new issue [HERE](https://github.com/LupineVault/LupineVault/issues/new?assignees=InfinityLoop1%2C+tf7software&labels=enhancement%2C+New+Game&projects=&template=game-addition.md&title=Game+Addition+%5BGame+Title%5D)
-    Can either be a ZIP file _or_ GitHub repo, __No download links besides GitHub__
+
+Can either be a ZIP file _or_ GitHub repo, __No download links besides GitHub__
 
 ---
 
