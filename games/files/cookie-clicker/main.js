@@ -15,6 +15,7 @@ lupinevault.com
 github.com/lupinevault
 */
 
+
 var VERSION=2.021;
 var BETA=1;
 
@@ -1110,16 +1111,7 @@ Game.Launch=function()
 		Game.Loader.loaded=Game.Init;
 		Game.Loader.Load(['filler.png']);
 	}
-	Game.ErrorFrame=function()
-	{
-		// tf7software wuz here
-		// Commented out for LupineVault (github.com/lupinevault)
-		//l('javascriptError').innerHTML=
-		//'<div class="title">Oops. Wrong address!</div>'+
-		//'<div>It looks like you\'re accessing Cookie Clicker from another URL than the official one.<br>'+
-		//'You can <a href="http://orteil.dashnet.org/cookieclicker/" target="_blank">play Cookie Clicker over here</a>!<br>'+
-		//'<small>(If for any reason, you are unable to access the game on the official URL, we are currently working on a second domain.)</small></div>';
-	}
+	
 	Game.timedout=false;
 	Game.Timeout=function()
 	{
