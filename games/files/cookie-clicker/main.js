@@ -7,6 +7,14 @@ Spoilers ahead.
 http://orteil.dashnet.org
 */
 
+/*
+This main.js file has been modifed for LupineVault
+
+lupinevault.com
+
+github.com/lupinevault
+*/
+
 var VERSION=2.021;
 var BETA=1;
 
