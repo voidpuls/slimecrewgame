@@ -1,4 +1,0 @@
-[[headers]]
-for = "*.pck"
-[headers.values]
-Content-Type = "application/octet-stream"
