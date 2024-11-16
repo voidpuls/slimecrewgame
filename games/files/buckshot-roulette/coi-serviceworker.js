@@ -1,2 +1,140 @@
 /*! coi-serviceworker v0.1.7 - Guido Zuidhof and contributors, licensed under MIT */
-let coepCredentialless=!1;"undefined"==typeof window?(self.addEventListener("install",(()=>self.skipWaiting())),self.addEventListener("activate",(e=>e.waitUntil(self.clients.claim()))),self.addEventListener("message",(e=>{e.data&&("deregister"===e.data.type?self.registration.unregister().then((()=>self.clients.matchAll())).then((e=>{e.forEach((e=>e.navigate(e.url)))})):"coepCredentialless"===e.data.type&&(coepCredentialless=e.data.value))})),self.addEventListener("fetch",(function(e){const o=e.request;if("only-if-cached"===o.cache&&"same-origin"!==o.mode)return;const s=coepCredentialless&&"no-cors"===o.mode?new Request(o,{credentials:"omit"}):o;e.respondWith(fetch(s).then((e=>{if(0===e.status)return e;const o=new Headers(e.headers);return o.set("Cross-Origin-Embedder-Policy",coepCredentialless?"credentialless":"require-corp"),coepCredentialless||o.set("Cross-Origin-Resource-Policy","cross-origin"),o.set("Cross-Origin-Opener-Policy","same-origin"),new Response(e.body,{status:e.status,statusText:e.statusText,headers:o})})).catch((e=>console.error(e))))}))):(()=>{const e=window.sessionStorage.getItem("coiReloadedBySelf");window.sessionStorage.removeItem("coiReloadedBySelf");const o="coepdegrade"==e,s={shouldRegister:()=>!e,shouldDeregister:()=>!1,coepCredentialless:()=>!0,coepDegrade:()=>!0,doReload:()=>window.location.reload(),quiet:!1,...window.coi},r=navigator,t=r.serviceWorker&&r.serviceWorker.controller;t&&!window.crossOriginIsolated&&window.sessionStorage.setItem("coiCoepHasFailed","true");const i=window.sessionStorage.getItem("coiCoepHasFailed");if(t){const e=s.coepDegrade()&&!(o||window.crossOriginIsolated);r.serviceWorker.controller.postMessage({type:"coepCredentialless",value:!(e||i&&s.coepDegrade())&&s.coepCredentialless()}),e&&(!s.quiet&&console.log("Reloading page to degrade COEP."),window.sessionStorage.setItem("coiReloadedBySelf","coepdegrade"),s.doReload("coepdegrade")),s.shouldDeregister()&&r.serviceWorker.controller.postMessage({type:"deregister"})}!1===window.crossOriginIsolated&&s.shouldRegister()&&(window.isSecureContext?r.serviceWorker?r.serviceWorker.register(window.document.currentScript.src).then((e=>{!s.quiet&&console.log("COOP/COEP Service Worker registered",e.scope),e.addEventListener("updatefound",(()=>{!s.quiet&&console.log("Reloading page to make use of updated COOP/COEP Service Worker."),window.sessionStorage.setItem("coiReloadedBySelf","updatefound"),s.doReload()})),e.active&&!r.serviceWorker.controller&&(!s.quiet&&console.log("Reloading page to make use of COOP/COEP Service Worker."),window.sessionStorage.setItem("coiReloadedBySelf","notcontrolling"),s.doReload())}),(e=>{!s.quiet&&console.error("COOP/COEP Service Worker failed to register:",e)})):!s.quiet&&console.error("COOP/COEP Service Worker not registered, perhaps due to private mode."):!s.quiet&&console.log("COOP/COEP Service Worker not registered, a secure context is required."))})();
+let coepCredentialless = !1;
+
+if (typeof window === "undefined") {
+  self.addEventListener("install", () => self.skipWaiting());
+  self.addEventListener("activate", (e) => e.waitUntil(self.clients.claim()));
+  self.addEventListener("message", (e) => {
+    if (e.data) {
+      if (e.data.type === "deregister") {
+        self.registration.unregister()
+          .then(() => self.clients.matchAll())
+          .then((clients) => {
+            clients.forEach((client) => client.navigate(client.url));
+          });
+      } else if (e.data.type === "coepCredentialless") {
+        coepCredentialless = e.data.value;
+      }
+    }
+  });
+
+  self.addEventListener("fetch", (e) => {
+    const request = e.request;
+    if (request.cache === "only-if-cached" && request.mode !== "same-origin") return;
+
+    // Modify the request if necessary
+    const modifiedRequest = coepCredentialless && request.mode === "no-cors" 
+      ? new Request(request, { credentials: "omit" }) 
+      : request;
+
+    e.respondWith(
+      fetch(modifiedRequest)
+        .then((response) => {
+          if (response.status === 0) return response; // If the status is 0, just return the response as is.
+
+          const headers = new Headers(response.headers);
+          headers.set("Cross-Origin-Embedder-Policy", coepCredentialless ? "credentialless" : "require-corp");
+          if (!coepCredentialless) {
+            headers.set("Cross-Origin-Resource-Policy", "cross-origin");
+          }
+          headers.set("Cross-Origin-Opener-Policy", "same-origin");
+
+          // Only create a new Response with body if it exists.
+          if (response.body) {
+            return new Response(response.body, {
+              status: response.status,
+              statusText: response.statusText,
+              headers: headers,
+            });
+          } else {
+            // If no body exists, return a Response with no body.
+            return new Response(null, {
+              status: response.status,
+              statusText: response.statusText,
+              headers: headers,
+            });
+          }
+        })
+        .catch((error) => {
+          console.error(error);
+        })
+    );
+  });
+} else {
+  const coepDegrade = window.sessionStorage.getItem("coiReloadedBySelf") === "coepdegrade";
+  window.sessionStorage.removeItem("coiReloadedBySelf");
+
+  const config = {
+    shouldRegister: () => !coepDegrade,
+    shouldDeregister: () => false,
+    coepCredentialless: () => true,
+    coepDegrade: () => true,
+    doReload: () => window.location.reload(),
+    quiet: false,
+    ...window.coi,
+  };
+
+  const navigatorInstance = navigator;
+  const serviceWorkerController = navigatorInstance.serviceWorker && navigatorInstance.serviceWorker.controller;
+  if (serviceWorkerController && !window.crossOriginIsolated) {
+    window.sessionStorage.setItem("coiCoepHasFailed", "true");
+  }
+
+  const coiCoepHasFailed = window.sessionStorage.getItem("coiCoepHasFailed");
+
+  if (serviceWorkerController) {
+    const shouldDegrade = config.coepDegrade() && !(coepDegrade || window.crossOriginIsolated);
+    serviceWorkerController.postMessage({
+      type: "coepCredentialless",
+      value: !(shouldDegrade || coiCoepHasFailed && config.coepDegrade()) && config.coepCredentialless(),
+    });
+
+    if (shouldDegrade && !config.quiet) {
+      console.log("Reloading page to degrade COEP.");
+      window.sessionStorage.setItem("coiReloadedBySelf", "coepdegrade");
+      config.doReload();
+    }
+
+    if (config.shouldDeregister()) {
+      serviceWorkerController.postMessage({ type: "deregister" });
+    }
+  }
+
+  if (!window.crossOriginIsolated && config.shouldRegister()) {
+    if (window.isSecureContext) {
+      if (navigatorInstance.serviceWorker) {
+        navigatorInstance.serviceWorker.register(window.document.currentScript.src)
+          .then((registration) => {
+            if (!config.quiet) {
+              console.log("COOP/COEP Service Worker registered", registration.scope);
+            }
+
+            registration.addEventListener("updatefound", () => {
+              if (!config.quiet) {
+                console.log("Reloading page to make use of updated COOP/COEP Service Worker.");
+              }
+              window.sessionStorage.setItem("coiReloadedBySelf", "updatefound");
+              config.doReload();
+            });
+
+            if (registration.active && !navigatorInstance.serviceWorker.controller) {
+              if (!config.quiet) {
+                console.log("Reloading page to make use of COOP/COEP Service Worker.");
+              }
+              window.sessionStorage.setItem("coiReloadedBySelf", "notcontrolling");
+              config.doReload();
+            }
+          })
+          .catch((error) => {
+            if (!config.quiet) {
+              console.error("COOP/COEP Service Worker failed to register:", error);
+            }
+          });
+      } else if (!config.quiet) {
+        console.log("COOP/COEP Service Worker not registered, perhaps due to private mode.");
+      }
+    } else if (!config.quiet) {
+      console.log("COOP/COEP Service Worker not registered, a secure context is required.");
+    }
+  }
+}
