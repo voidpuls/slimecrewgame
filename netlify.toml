@@ -1,0 +1,35 @@
+[build]
+  # The directory where your Godot game files are located
+  publish = "games/files/buckshot-roulette"
+  # Uncomment if you have a build command
+  # command = "npm run build"
+
+[[redirects]]
+  # Redirect all routes to the game's index.html for SPA behavior
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  # Add headers for WebAssembly files
+  for = "*.wasm"
+  [headers.values]
+    Content-Type = "application/wasm"
+
+[[headers]]
+  # Add headers for JavaScript files
+  for = "*.js"
+  [headers.values]
+    Content-Type = "application/javascript"
+
+[[headers]]
+  # Add headers for PCK files
+  for = "*.pck"
+  [headers.values]
+    Content-Type = "application/octet-stream"
+
+[[headers]]
+  # Allow CORS for all resources
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
