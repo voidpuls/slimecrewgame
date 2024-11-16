@@ -1,4 +1,4 @@
-name: Download pck
+name: Download Pck
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  download-and-extract:
+  download-and-move:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,3 +24,15 @@ jobs:
     - name: File Size Check
       run: |
         du -h index.pck
+
+    - name: Create Target Directory
+      run: |
+        mkdir -p games/files/buckshot-roulette
+
+    - name: Move index.pck to target directory
+      run: |
+        mv index.pck games/files/buckshot-roulette/
+
+    - name: Verify File in Target Directory
+      run: |
+        ls -l games/files/buckshot-roulette
