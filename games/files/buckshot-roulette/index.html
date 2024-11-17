@@ -138,8 +138,8 @@ body {
 			</div>
 			<div id="status-notice" class="godot" style="display: none;"></div>
 		</div>
+		<script src="coi-serviceworker.min.js"></script>
 		<script src="index.js"></script>
-		<script src="coi-serviceworker.js"></script>
 		<script>
 const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":345408288,"index.wasm":28972640},"focusCanvas":true,"gdextensionLibs":[]};
 const engine = new Engine(GODOT_CONFIG);
@@ -221,7 +221,7 @@ const engine = new Engine(GODOT_CONFIG);
 
 	const missing = Engine.getMissingFeatures();
 	if (missing.length !== 0) {
-		const missingMsg = 'Note\nPlease reload if the game is not runing:\n' + "Have a goodday";
+		const missingMsg = 'Note\nPlease use Source View for game to run.:\n' + "GAME MAY NOT ALWAYS WORK";
 
 		displayFailureNotice(missingMsg);
 	} else {
