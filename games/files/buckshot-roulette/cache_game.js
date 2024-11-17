@@ -1,14 +1,3 @@
-const GODOT_CONFIG = {
-    args: [],
-    canvasResizePolicy: 2,
-    executable: "index",
-    experimentalVK: false,
-    fileSizes: { "index.pck": 345408288, "index.wasm": 28972640 },
-    focusCanvas: true,
-    gdextensionLibs: []
-};
-const engine = new Engine(GODOT_CONFIG);
-
 async function fetchAndCacheFile(url, key) {
     let cachedData = localStorage.getItem(key);
     if (cachedData) {
@@ -27,6 +16,8 @@ async function fetchAndCacheFile(url, key) {
 (async function () {
     const pckFile = await fetchAndCacheFile("index.pck", "index_pck");
     const wasmFile = await fetchAndCacheFile("index.wasm", "index_wasm");
+
+    const engine = new Engine(GODOT_CONFIG); // Use GODOT_CONFIG from index.js
 
     engine.startGame({
         pck: URL.createObjectURL(pckFile),
