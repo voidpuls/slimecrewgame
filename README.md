@@ -8,7 +8,7 @@ A collection of over 350 games written in HTML5
 
 There are currently ```394``` games in the LupineVault.
 
-[![Join Our Discord](https://img.shields.io/badge/Join%20Our-Discord-purple)](https://discord.gg/Ex2nZUWuHF)
+[![Join Our Discord](https://img.shields.io/badge/Join%20Our-Discord-purple)](https://discord.gg/Ex2nZUWuHF) [![Netlify Status](https://api.netlify.com/api/v1/badges/9436ad01-205a-4719-bd70-005423e4f0ca/deploy-status)](https://app.netlify.com/sites/lupinevault/deploys)
 
 ---
 ### Pesky game blocker? No problem.
