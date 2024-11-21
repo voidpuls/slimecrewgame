@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Game - LupineVault</title>
+    <link rel="stylesheet" href="assets/styles/css/global.css">
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-48x48.png" sizes="48x48">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="manifest" href="/assets/favicons/site.webmanifest">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0">
+</head>
+<body>
+    <main class="container">
+        <h1>Request a Game</h1>
+        <p>Please fill out the form below to submit your game request. We look forward to hearing your suggestions!</p>
+        <form id="request-form" name="request-game-form" action="https://formspree.io/f/xbljkwak" method="post">
+            <!-- Contact Information -->
+            <fieldset class="form-section">
+                <legend>Contact Information</legend>
+                <label for="full-name">Full Name<span class="required">*</span></label>
+                <input type="text" name="name" id="full-name" class="form-input" placeholder="First and Last Name" required>
+                
+                <label for="email-address">Email Address<span class="required">*</span></label>
+                <input type="email" name="_replyto" id="email-address" class="form-input" placeholder="yourname@example.com" required>
+            </fieldset>
+
+            <!-- Game Title -->
+            <fieldset class="form-section">
+                <legend>Game Title</legend>
+                <label for="game-title">Game Title<span class="required">*</span></label>
+                <input type="text" name="game-title" id="game-title" class="form-input" placeholder="Enter the game title" required>
+            </fieldset>
+
+            <!-- Recommendation Reason -->
+            <fieldset class="form-section">
+                <legend>Why Recommend This Game?</legend>
+                
+                <textarea name="game-recommendation" id="game-recommendation" class="form-textarea" rows="5" placeholder="Tell us why this game would be a great addition."></textarea>
+            </fieldset>
+
+            <input type="hidden" name="_subject" value="Game Request Submission">
+
+            <button type="submit" class="submit-button">Submit Request</button>
+        </form>
+        
+        <div id="form-success" class="form-success" hidden>
+            <p>Thank you for your submission! We will review your request and get back to you soon.</p>
+        </div>
+    </main>
+
+    <script src="assets/js/global.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
