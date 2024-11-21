@@ -13,3 +13,9 @@ async function fetchFiles(dir) {
     console.log(data);
     return data;
 }
+
+document.addEventListener('keydown', (event) => {
+  if (event.ctrlKey && event.key === '`') {
+      location.href = localStorage.getItem("redirectURL");
+  }
+});

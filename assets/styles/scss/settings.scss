@@ -1,0 +1,15 @@
+@use "global";
+
+.container-div {
+    display: flex;
+    gap: 10px;
+    background-color: global.$accent-dark;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.child-div {
+    display: flex;
+    gap: 10px;
+}

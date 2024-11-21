@@ -15,20 +15,22 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
     </head>
     <body>
+        <span id="corner-menu"><a href="settings.html"><span class="material-symbols-rounded">settings</span></a></span>
         <img src="assets/images/Title.png" class="logo">
-        <h1 id="heading">An archive of 350 games written in HTML5</h1>
-        <br><br>
-        <button id="bigPlayButton" onclick="window.location.href = 'games/select.html'">Play ►</button>
+        <h2 id="heading">An archive of 350 games written in HTML5</h2>
+        <br>
+        <div class="bigPlayButton" onclick="window.location.href = 'games/select.html'">
+            Play ►
+            </div>
+            <br>
+            <div class="smallerPlayButtonsContainer">
+            <div class="smallerPlayButtons" onclick="openSVG()">Play in data link (Not all games work, undetectable, reload the after clicking to play) ►</div>
+            <div class="smallerPlayButtons" onclick="openAboutBlank()">Play in about:blank (All games work, semi-undetectable) ►</div>
+        </div>
         <p id="flavorText"></p>
         <br>
-        <a href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiID8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMTI4MCA3MjAiPgogICAgPHRpdGxlPkdvb2dsZTwvdGl0bGU+CiAgICA8Zm9yZWlnbk9iamVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj4KICAgICAgICA8ZW1iZWQgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiIHNyYz0iaHR0cHM6Ly9uZXZlcmV2ZXJ1c2V0aGlzZm9yYW55dGhpbmdiZXNpZGVzZGF0YWxpbmtzZm9ybHVwaW5ldmF1bHQuOTg4MjEzNi54eXovIiB0eXBlPSJ0ZXh0L3BsYWluIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiAvPgogICAgPC9mb3JlaWduT2JqZWN0Pgo8L3N2Zz4K" target="_blank">
-            Open in DATA link (Not all games work - Undetectable - You must reload the DATA link after clicking to play) ►
-        </a>
+        <section id="infoSection">
         <br>
-        <a href="/games/select.html" target="_blank" onclick="window.open(this.href, 'about:blank'); return false;">
-            Open in about:blank (All games work - Detectable) ►
-        </a>
-        <br><br><br><br><br>
         <h2 id="about">About</h2>
         <p>LupineVault was created by <a href="https://github.com/tf7software">tf7software</a> (Backend) and <a href="https://github.com/InfinityLoop1">InfinityLoop</a> (Frontend)</p>
         <p>LupineVault was inspired by <a href="https://github.com/InfinityGamer-Game-Site">InfinityGamer</a></p>
@@ -40,6 +42,7 @@
         <p>Version 1.8.3</p>
          <a href='http://www.freevisitorcounters.com'>freevisitorcounterss Homepage</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=d222fd70cd154863dc5f771e95646a1619a1d358'></script>
 <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1262052/t/1"></script>
+</section>
         <script src="assets/js/global.js"></script>
         <script src="assets/js/index.js"></script>
     </body>
