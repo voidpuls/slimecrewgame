@@ -14,8 +14,17 @@ async function fetchFiles(dir) {
     return data;
 }
 
+if (!localStorage.getItem("panicKey")) {
+  localStorage.setItem("panicKey", "`");
+}
+
 document.addEventListener('keydown', (event) => {
-  if (event.ctrlKey && event.key === '`') {
-      location.href = localStorage.getItem("redirectURL");
+  
+  if (event.ctrlKey && event.key == localStorage.getItem("panicKey")) {
+      location.href = localStorage.getItem("panicRedirectURL") || "https://classroom.google.com";
   }
 });
+
+if (localStorage.getItem("pageTitle")) {
+  document.title = localStorage.getItem("pageTitle");
+}
