@@ -8,7 +8,7 @@ A collection of over 350 games written in HTML5
 
 There are currently ```394``` games in the LupineVault.
 
-[![Join Our Discord](https://img.shields.io/badge/Join%20Our-Discord-purple)](https://discord.gg/Ex2nZUWuHF) [![Netlify Status](https://api.netlify.com/api/v1/badges/9436ad01-205a-4719-bd70-005423e4f0ca/deploy-status)](https://app.netlify.com/sites/lupinevault/deploys) [![Deploy to Netlify](https://binbashbanana.github.io/deploy-buttons/buttons/remade/netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LupineVault/LupineVault)
+[![Join Our Discord](https://img.shields.io/badge/Join%20Our-Discord-purple)](https://discord.gg/Ex2nZUWuHF) [![Netlify Status](https://api.netlify.com/api/v1/badges/9436ad01-205a-4719-bd70-005423e4f0ca/deploy-status)](https://app.netlify.com/sites/lupinevault/deploys)
 
 ---
 ### Pesky game blocker? No problem.
@@ -61,6 +61,23 @@ Can either be a ZIP file _or_ GitHub repo, __No download links besides GitHub__
 - You must use (by copy-and-pastng ___exactly___) the README [HERE](https://github.com/LupineVault/LupineVault/blob/05bcda1cf4677d5bff6970c6c6e317876af9b372/forks.md)
 - You must include attribution for this repo, tf7software, and InfinityLoop on index.html
 - You must include a attribution.txt file at domain.extension/attribution.txt
+
+
+Deploy Links
+---
+[![Deploy to Heroku](https://binbashbanana.github.io/deploy-buttons/buttons/remade/heroku.svg)](https://heroku.com/deploy/?template=https://github.com/LupineVault/LupineVault)
+[![Run on Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://replit.com/github/LupineVault/LupineVault)
+[![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/LupineVault/LupineVault)
+[![Deploy to Amplify Console](https://binbashbanana.github.io/deploy-buttons/buttons/remade/amplifyconsole.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/LupineVault/LupineVault)
+[![Run on Google Cloud](https://binbashbanana.github.io/deploy-buttons/buttons/remade/googlecloud.svg)](https://deploy.cloud.run/?git_repo=https://github.com/LupineVault/LupineVault)
+[![Deploy to Oracle Cloud](https://binbashbanana.github.io/deploy-buttons/buttons/remade/oraclecloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/LupineVault/LupineVault/archive/refs/heads/main.zip)
+[![Deploy on Railway](https://binbashbanana.github.io/deploy-buttons/buttons/remade/railway.svg)](https://railway.app/new/template?template=https://github.com/LupineVault/LupineVault)
+[![Deploy to Vercel](https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg)](https://vercel.com/new/clone?repository-url=https://github.com/LupineVault/LupineVault)
+[![Deploy to Netlify](https://binbashbanana.github.io/deploy-buttons/buttons/remade/netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LupineVault/LupineVault)
+[![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/LupineVault/LupineVault&branch=Main&name=LupineVault)
+[![Deploy to Render](https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg)](https://render.com/deploy?repo=https://github.com/LupineVault/LupineVault)
+[![Deploy to Cyclic](https://binbashbanana.github.io/deploy-buttons/buttons/remade/cyclic.svg)](https://app.cyclic.sh/api/app/deploy/LupineVault/LupineVault)
+
 
 Inspired by InfinityLoop's [InfinityGamer](https://github.com/InfinityGamer-Game-Site) site, and was started by [tf7software](https://github.com/tf7software) and [InfinityLoop](https://github.com/InfinityLoop1)
 
