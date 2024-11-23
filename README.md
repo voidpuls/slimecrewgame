@@ -41,13 +41,17 @@ More to come...
 - Can be online
 - Keep it PG-13 or below
 
-### How to get contributions in the vault
+### How to get contributions in the vault:
 
-  Contact us using [Discord](https://discord.gg/Ex2nZUWuHF)
-  
-___or___
+  Submit a request [HERE](https://lupinevault.com/request-game) for the fastest response time
+
+  _or_
 
   Start a new issue or pull request
+
+  _or_
+
+  Contact us using [Discord](https://discord.gg/Ex2nZUWuHF)
 
 Can either be a ZIP file _or_ GitHub repo, __No download links besides GitHub__
 
