@@ -17,9 +17,30 @@
     <body>
         <span id="corner-menu"><a href="../index.html"><span class="material-symbols-rounded">home</span></a></span>
         <h1>Settings</h1>
-        <div class="container-div" id="cloaking-div">
+        <h2>Panic Key</h2>
+        <div class="container-div" id="panic-div">
+            <div class="child-div" id="panic-key-div">
+                <h3>Panic key</h3>
+                <p>Key to be pressed with ctrl for panic shortcut</p>
+                <div class="input-container">
+                <input type="text" id="panic-key-input" placeholder="`"><button id="panic-key-button">Submit</button>
+            </div>
+            </div>
             <div class="child-div" id="redirect-link-div">
-                <input type="text" id="redirect-link-input" placeholder="Redirect link for panic key"><button id="redirect-link-button">Submit</button>
+                <h3>Panic key URL</h3>
+                <p>Link to redirect to on panic key press</p>
+                <div class="input-container">
+                <input type="text" id="redirect-link-input" placeholder="https://classroom.google.com"><button id="redirect-link-button">Submit</button>
+            </div>
+            </div>
+        </div>
+        <h2>Cloaking</h2>
+        <div class="container-div" id="cloaking-div">
+            <div class="child-div" id="page-title-div">
+                <h3>Page Title</h3>
+                <p>Set title of page tab</p>
+                <div class="input-container">
+                <input type="text" id="page-title-input" placeholder="LupineVault"><button id="page-title-button">Submit</button>
             </div>
         </div>
 
