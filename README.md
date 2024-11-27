@@ -39,7 +39,7 @@ More to come...
 - Must be able to run statically
 - Must contain and run on an index.html file
 - Can be online
-- Keep it PG-13 or below
+- Keep it PG-13 or below (Mature is fine for shooting games)
 
 ### How to get contributions in the vault:
 
