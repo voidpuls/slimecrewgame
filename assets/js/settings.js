@@ -1,4 +1,4 @@
-document.getElementById('redirect-link-button').addEventListener('click', function(event) {
+document.getElementById('redirect-link-button').addEventListener('click', function (event) {
 
     const input = document.getElementById('redirect-link-input');
 
@@ -13,7 +13,7 @@ document.getElementById('redirect-link-button').addEventListener('click', functi
     alert('Set!');
 });
 
-document.getElementById('panic-key-button').addEventListener('click', function(event) {
+document.getElementById('panic-key-button').addEventListener('click', function (event) {
 
     const input = document.getElementById('panic-key-input');
 
@@ -28,7 +28,7 @@ document.getElementById('panic-key-button').addEventListener('click', function(e
     alert('Set!');
 });
 
-document.getElementById('page-title-button').addEventListener('click', function(event) {
+document.getElementById('page-title-button').addEventListener('click', function (event) {
 
     const input = document.getElementById('page-title-input');
 
@@ -42,3 +42,25 @@ document.getElementById('page-title-button').addEventListener('click', function(
     localStorage.setItem('pageTitle', title);
     alert('Set! (Reload to see changes)');
 });
+
+
+document.getElementById('favicon-button').addEventListener('click', function () {
+    const input = document.getElementById('favicon-input');
+
+    if (input.files.length === 0) {
+        alert('Please select a file');
+        return;
+    }
+
+    const file = input.files[0];
+    const reader = new FileReader();
+
+    reader.onload = function (event) {
+        const faviconDataURL = event.target.result; // Base64 URL
+        localStorage.setItem('favicon', faviconDataURL);
+        alert('Favicon set! (Reload to see changes)');
+    };
+
+    reader.readAsDataURL(file); // Convert file to Base64 URL
+});
+
