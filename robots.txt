@@ -2,10 +2,14 @@ User-agent: *
 Disallow: /
 
 User-agent: Googlebot
-Disallow:
+Disallow: /games/play.html?g=buckshot-roulette
+Disallow: /games/files/buckshot-roulette/index.html
 
 User-agent: AdsBot-Google
-Disallow:
+Disallow: /games/play.html?g=buckshot-roulette
+Disallow: /games/files/buckshot-roulette/index.html
 
 User-agent: Googlebot-Image
-Disallow:
+Disallow: /games/play.html?g=buckshot-roulette
+Disallow: /games/files/buckshot-roulette/index.html
+ 
