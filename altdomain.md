@@ -1,3 +1,0 @@
-- Must not be a subpage (domain.com/games)
-- Can be a subdomain (games.domain.com)
-- Has to meet fork requirements

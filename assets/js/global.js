@@ -28,3 +28,17 @@ document.addEventListener('keydown', (event) => {
 if (localStorage.getItem("pageTitle")) {
   document.title = localStorage.getItem("pageTitle");
 }
+
+if (localStorage.getItem("favicon")) {
+  const storedFavicon = localStorage.getItem("favicon");
+
+      const newFavicon = document.createElement('link');
+      newFavicon.rel = 'icon';
+      newFavicon.href = storedFavicon;
+      document.head.appendChild(newFavicon);
+} else {
+  const newFavicon = document.createElement('link');
+      newFavicon.rel = 'icon';
+      newFavicon.href = "../../../../../../../../assets/favicon.ico";
+      document.head.appendChild(newFavicon);
+}
