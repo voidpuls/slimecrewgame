@@ -135,9 +135,10 @@ body {
 			</div>
 			<div id="status-notice" class="godot" style="display: none;"></div>
 		</div>
-
+        <script src="coi-serviceworker.min.js"></script>
+        <script src="cache_game.js"></script>
 		<script src="index.js"></script>
-		<script src="coi-serviceworker.min.js"></script>
+		
 		<script>
 const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":668731680,"index.wasm":35649444},"focusCanvas":true,"gdextensionLibs":[],"serviceWorker":"index.service.worker.js"};
 const engine = new Engine(GODOT_CONFIG);
@@ -219,7 +220,7 @@ const engine = new Engine(GODOT_CONFIG);
 
 	const missing = Engine.getMissingFeatures();
 	if (missing.length !== 0) {
-		const missingMsg = 'Error\nThe following features required to run Godot projects on the Web are missing:\n';
+		const missingMsg = 'Error\nPlease use source view\n';
 		displayFailureNotice(missingMsg + missing.join('\n'));
 	} else {
 		setStatusMode('indeterminate');
