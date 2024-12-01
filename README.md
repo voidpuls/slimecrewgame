@@ -8,7 +8,8 @@ A collection of almost 400 HTML5 games with cloaking and integrated chat
 
 There are currently ```396``` games in the LupineVault.
 
-[![Join Our Discord](https://img.shields.io/badge/Join%20Our-Discord-purple)](https://discord.gg/Ex2nZUWuHF) [![Netlify Status](https://api.netlify.com/api/v1/badges/9436ad01-205a-4719-bd70-005423e4f0ca/deploy-status)](https://app.netlify.com/sites/lupinevault/deploys)
+[![Join Our Discord](https://img.shields.io/badge/Join%20Our-Discord-purple)](https://discord.gg/Ex2nZUWuHF) [![Netlify Status](https://api.netlify.com/api/v1/badges/9436ad01-205a-4719-bd70-005423e4f0ca/deploy-status)](https://app.netlify.com/sites/lupinevault/deploys) [![maintenance-status](https://img.shields.io/badge/maintenance-actively--developed-brightgreen.svg)](https://github.com/LupineVault/LupineVault/commits/main/)
+
 
 ---
 ### Pesky game blocker? No problem.
