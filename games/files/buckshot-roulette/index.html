@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<title>Buckshot Roulette</title>
-		<meta name="robots" content="noindex">
-		<meta name="title" content="Buckshot Roulette">
-		<meta name="description" content="Buckshot Roulette Online - Play without download - total free.">
-		<meta name="keywords" content="buckshot roulette">
-		<link rel="canonical" href="https://lupinevault.com/games/files/buckshot-roulette/index.html">		
 		<style>
 body {
 	touch-action: none;
@@ -115,6 +111,7 @@ body {
 		</style>
 		<link id='-gd-engine-icon' rel='icon' type='image/png' href='index.icon.png' />
 <link rel='apple-touch-icon' href='index.apple-touch-icon.png'/>
+<link rel='manifest' href='index.manifest.json'>
 
 	</head>
 	<body>
@@ -138,11 +135,10 @@ body {
 			</div>
 			<div id="status-notice" class="godot" style="display: none;"></div>
 		</div>
-		<script src="coi-serviceworker.min.js"></script>
-		<script src="cache_game.js"></script>
+
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":345408288,"index.wasm":28972640},"focusCanvas":true,"gdextensionLibs":[]};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":668731680,"index.wasm":35649444},"focusCanvas":true,"gdextensionLibs":[],"serviceWorker":"index.service.worker.js"};
 const engine = new Engine(GODOT_CONFIG);
 
 (function () {
@@ -222,9 +218,8 @@ const engine = new Engine(GODOT_CONFIG);
 
 	const missing = Engine.getMissingFeatures();
 	if (missing.length !== 0) {
-		const missingMsg = 'Note\nPlease use Source View for game to run.:\n' + "GAME MAY NOT ALWAYS WORK & TAKES A LONG TIME TO LOAD";
-
-		displayFailureNotice(missingMsg);
+		const missingMsg = 'Error\nThe following features required to run Godot projects on the Web are missing:\n';
+		displayFailureNotice(missingMsg + missing.join('\n'));
 	} else {
 		setStatusMode('indeterminate');
 		engine.startGame({
