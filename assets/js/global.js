@@ -32,7 +32,7 @@ if (localStorage.getItem("pageTitle")) {
 }
 
 // Set favicon from localStorage or use the default
-const faviconHref = localStorage.getItem("favicon") || "../LupineVault/assets/images/logo.png";
+const faviconHref = localStorage.getItem("favicon") || "../LupineVault/assets/favicons/favicon.ico";
 const faviconLink = document.createElement("link");
 faviconLink.rel = "icon";
 faviconLink.href = faviconHref;
