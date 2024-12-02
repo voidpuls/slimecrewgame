@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- © Mike Klubnika 2024, Decomped by tf7software for LupineVault -->
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -135,12 +136,11 @@ body {
 			</div>
 			<div id="status-notice" class="godot" style="display: none;"></div>
 		</div>
-        <script src="coi-serviceworker.min.js"></script>
-        
+
+		<script src="coi-serviceworker.min.js"></script>
 		<script src="index.js"></script>
-		
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":668731680,"index.wasm":35649444},"focusCanvas":true,"gdextensionLibs":[],"serviceWorker":"index.service.worker.js"};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":346237728,"index.wasm":49219187},"focusCanvas":true,"gdextensionLibs":[],"serviceWorker":"index.service.worker.js"};
 const engine = new Engine(GODOT_CONFIG);
 
 (function () {
@@ -220,7 +220,7 @@ const engine = new Engine(GODOT_CONFIG);
 
 	const missing = Engine.getMissingFeatures();
 	if (missing.length !== 0) {
-		const missingMsg = 'Error\nPlease use source view\n';
+		const missingMsg = 'Error\nThe following features required to run Godot projects on the Web are missing:\n';
 		displayFailureNotice(missingMsg + missing.join('\n'));
 	} else {
 		setStatusMode('indeterminate');
