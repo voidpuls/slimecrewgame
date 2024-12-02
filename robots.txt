@@ -13,3 +13,4 @@ User-agent: Googlebot-Image
 Disallow: /games/play.html?g=buckshot-roulette
 Disallow: /games/files/buckshot-roulette/index.html
  
+Sitemap: https://lupinevault.com/sitemap.xml
