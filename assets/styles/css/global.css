@@ -1,158 +1,138 @@
 @import "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap";
 
 body {
-  background-color: #252025;
-  color: #d5cde4;
-  text-align: center;
-  font-family: "Open Sans";
-  padding: 0;
-  margin: 0;
+    background-color: #252025;
+    color: #d5cde4;
+    text-align: center;
+    font-family: "Open Sans";
+    padding: 0;
 }
 
 .logo {
-  filter: drop-shadow(0 0 10px #5e17eb);
-  animation: loglow 2s infinite alternate;
-  position: absolute; /* Ensure it's positioned correctly */
-  top: 10%;
-  left: 50%;
-
-  width: 75vw; /* Initial width, will scale for different screen sizes */
-  
+    filter: drop-shadow(0 0 10px #5e17eb);
+    animation: loglow 2s infinite alternate;
+    top: 10px;
+    width: 75vw; /* This makes the logo 75% of the viewport width */
 }
 
 @keyframes loglow {
-  0% {
-    filter: drop-shadow(0 0 10px #5e17eb);
-  }
-  100% {
-    filter: drop-shadow(0 0 25px #5e17eb);
-  }
-}
-
-/* Resize the logo for different screen sizes */
-@media (max-width: 768px) {
-  .logo {
-    width: 50vw; /* Increase the logo width on smaller screens */
-    max-width: 200px; /* Adjust max-width for smaller screens */
-  }
-}
-
-@media (max-width: 480px) {
-  .logo {
-    width: 60vw; /* Even larger on very small screens */
-    max-width: 150px; /* Max-width reduced for very small screens */
-  }
+    0% {
+        filter: drop-shadow(0 0 10px #5e17eb);
+    }
+    100% {
+        filter: drop-shadow(0 0 25px #5e17eb);
+    }
 }
 
 .bigPlayButton {
-  background: linear-gradient(90deg, #26134d, #281255);
-  color: #eee;
-  font-size: 250%;
-  padding: 50px;
-  text-shadow: 0 0 10px #7c43ec, 0 0 20px #7c43ec, 0 0 30px #5e17eb, 0 0 40px #5e17eb, 0 0 50px #5e17eb, 0 0 60px #5e17eb, 0 0 70px #5e17eb;
-  border-radius: 20px;
-  border: none;
-  filter: drop-shadow(0 0 50px #4311a5);
-  cursor: pointer;
-  transition-duration: .5s;
-  width: 75vw;
-  margin: 0 auto;
+    background: linear-gradient(90deg, #26134d, #281255);
+    color: #eee;
+    font-size: 250%;
+    padding: 50px;
+    text-shadow: 0 0 10px #7c43ec, 0 0 20px #7c43ec, 0 0 30px #5e17eb, 0 0 40px #5e17eb, 0 0 50px #5e17eb, 0 0 60px #5e17eb, 0 0 70px #5e17eb;
+    border-radius: 20px;
+    border: none;
+    filter: drop-shadow(0 0 50px #4311a5);
+    cursor: pointer;
+    transition-duration: .5s;
+    width: 75vw;
+    margin: 0 auto;
 }
 
 .smallerPlayButtonsContainer {
-  display: flex;
-  gap: 10px;
+    display: flex;
+    gap: 10px;
 }
 
 .smallerPlayButtons {
-  background: linear-gradient(90deg, #26134d, #281255);
-  color: #eee;
-  font-size: 150%;
-  padding: 50px;
-  text-shadow: 0 0 10px #7c43ec, 0 0 20px #7c43ec, 0 0 30px #5e17eb, 0 0 40px #5e17eb, 0 0 50px #5e17eb, 0 0 60px #5e17eb, 0 0 70px #5e17eb;
-  border-radius: 20px;
-  border: none;
-  filter: drop-shadow(0 0 50px #4311a5);
-  cursor: pointer;
-  transition-duration: .5s;
-  width: 40vw;
-  margin: 0 auto;
+    background: linear-gradient(90deg, #26134d, #281255);
+    color: #eee;
+    font-size: 150%;
+    padding: 50px;
+    text-shadow: 0 0 10px #7c43ec, 0 0 20px #7c43ec, 0 0 30px #5e17eb, 0 0 40px #5e17eb, 0 0 50px #5e17eb, 0 0 60px #5e17eb, 0 0 70px #5e17eb;
+    border-radius: 20px;
+    border: none;
+    filter: drop-shadow(0 0 50px #4311a5);
+    cursor: pointer;
+    transition-duration: .5s;
+    width: 40vw;
+    margin: 0 auto;
 }
 
 .bigPlayButton:hover {
-  filter: drop-shadow(0 0 100px #4311a5);
-  transform: scale(1.05);
+    filter: drop-shadow(0 0 100px #4311a5);
+    transform: scale(1.05);
 }
 
 .smallerPlayButtons:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 #about {
-  margin-top: 120px;
+    margin-top: 120px;
 }
 
 a {
-  color: #d5cde4;
-  text-underline-offset: 2.5px;
-  transition-duration: .25s;
+    color: #d5cde4;
+    text-underline-offset: 2.5px;
+    transition-duration: .25s;
 }
 
 a:hover {
-  text-underline-offset: 1px;
+    text-underline-offset: 1px;
 }
 
 ::-moz-placeholder {
-  color: #d5cde4;
+    color: #d5cde4;
 }
 
 ::placeholder {
-  color: #d5cde4;
+    color: #d5cde4;
 }
 
 input {
-  color: #d5cde4;
-  background-color: #7c43ec;
-  filter: drop-shadow(0 0 5px #7c43ec);
-  border: none;
-  text-align: center;
+    color: #d5cde4;
+    background-color: #7c43ec;
+    filter: drop-shadow(0 0 5px #7c43ec);
+    border: none;
+    text-align: center;
 }
 
 #corner-menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: #4311a5;
-  padding: 5px 10px;
-  border-radius: 0 0 0 10px;
-  display: flex;
-  gap: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #4311a5;
+    padding: 5px 10px;
+    border-radius: 0 0 0 10px;
+    display: flex;
+    gap: 10px;
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #4311a5;
+    background: #4311a5;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #7c43ec;
-  border-radius: 10px 0 0 10px;
+    background: #7c43ec;
+    border-radius: 10px 0 0 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #d5cde4;
+    background: #d5cde4;
 }
 
 button {
-  background: linear-gradient(90deg, #26134d, #281255);
-  color: #eee;
-  padding: 7.5px;
-  filter: drop-shadow(0 0 5px #7c43ec);
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-  transition-duration: .5s;
+    background: linear-gradient(90deg, #26134d, #281255);
+    color: #eee;
+    padding: 7.5px;
+    filter: drop-shadow(0 0 5px #7c43ec);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition-duration: .5s;
 }
