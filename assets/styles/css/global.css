@@ -15,7 +15,7 @@ body {
   position: absolute; /* Ensure it's positioned correctly */
   top: 10%;
   left: 50%;
-  transform: translateX(-50%); /* Center it horizontally */
+
   width: 75vw; /* Initial width, will scale for different screen sizes */
   
 }
