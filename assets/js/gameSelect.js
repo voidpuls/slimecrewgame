@@ -1,7 +1,5 @@
 let gameContainer = document.getElementById("gameContainer");
 
-
-
 function createGameBox(gameName) {
     const gameImg = `../assets/images/games/${gameName}.png`;
     const gameLink = `play.html?g=${gameName}`;
@@ -31,18 +29,23 @@ function filterGames() {
 }
 
 document.addEventListener("DOMContentLoaded", async function (e) {
-    gameNames = await fetchFiles("games/files");
+    // Fetch games.json and simulate getting the "games/files" directory
+    let gameNames = await fetchFiles(""); // Empty string for full data
 
+    // Extract 'name' properties from the fetched JSON data
     gameNames = gameNames.map((obj) => obj.name);
 
+    // Sort and create game boxes
     gameNames.sort();
 
     gameNames.forEach(function (gameName) {
         gameContainer.appendChild(createGameBox(gameName));
     });
 
-    document.getElementById("gameCount").textContent = "There are currently " + gameNames.length + " games in the LupineVault.";
+    // Update the game count
+    document.getElementById("gameCount").textContent =
+        "There are currently " + gameNames.length + " games in the LupineVault.";
 
+    // Add search filter functionality
     document.getElementById("searchInput").addEventListener("input", filterGames);
 });
-
