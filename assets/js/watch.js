@@ -29,6 +29,14 @@ fullscreenBtn.addEventListener("click", toggleFullscreen);
 closeBtn.addEventListener("click", closeIframe);
 closeSeasonEpisodeBtn.addEventListener("click", () => seasonEpisodeExplorer.style.display = "none");
 
+// Lazy loading event listener for scroll
+window.addEventListener("scroll", () => {
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 200 && !isLoading) {
+        currentPage++;
+        fetchContent(currentPage, searchQuery, moviesTab.classList.contains("active") ? "movie" : "tv");
+    }
+});
+
 // Fetch Movies or TV Shows
 async function fetchContent(page = 1, query = "", type = "movie") {
     isLoading = true;
@@ -228,7 +236,7 @@ function switchTab(type) {
 // Handle Search
 function handleSearch(event) {
     searchQuery = event.target.value;
-    // Fetch both Movies and TV shows based on search query
+    currentPage = 1; // Reset page on new search
     fetchContent(currentPage, searchQuery, "movie");
     fetchContent(currentPage, searchQuery, "tv");
 }
