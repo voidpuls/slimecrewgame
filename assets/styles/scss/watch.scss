@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 .playLogo {
     width: 42vw;
     display: block;
@@ -150,7 +154,7 @@
 /* Overlay for Season/Episode Explorer */
 #season-episode-explorer {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -159,8 +163,9 @@
     backdrop-filter: blur(10px);
     z-index: 1000;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
+
 
 #season-episode-container {
     background: #222;

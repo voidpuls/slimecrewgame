@@ -29,6 +29,17 @@ fullscreenBtn.addEventListener("click", toggleFullscreen);
 closeBtn.addEventListener("click", closeIframe);
 closeSeasonEpisodeBtn.addEventListener("click", () => seasonEpisodeExplorer.style.display = "none");
 
+const updateHeight = () => {
+    const fullPageHeight = Math.max(
+        document.body.scrollHeight,
+        document.documentElement.scrollHeight
+    );
+    seasonEpisodeExplorer.style.height = `${fullPageHeight}px`;
+    console.log("Updated height" + fullPageHeight);
+};
+
+setInterval(updateHeight, 500);
+
 // Lazy loading event listener for scroll
 window.addEventListener("scroll", () => {
     if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 100 && !isLoading) {
@@ -249,3 +260,4 @@ function handleSearch(event) {
 // Initialize with Movies and TV shows
 fetchContent(currentPage, searchQuery, "movie");
 fetchContent(currentPage, searchQuery, "tv");
+
