@@ -16,9 +16,9 @@ body {
 
 .logo {
     filter: drop-shadow(0 0 10px $accent);
+    width: 75vw; // Ensures the logo is 75% of the viewport width
     animation: loglow 2s infinite alternate;
     top: 10px;
-    width: 75vw;
 }
 
 @keyframes loglow {
