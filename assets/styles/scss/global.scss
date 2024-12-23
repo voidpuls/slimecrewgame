@@ -28,30 +28,12 @@ body {
         filter: drop-shadow(0 0 25px $accent);
     }
 }
-
-.bigPlayButton {
-    background: linear-gradient(90deg, #26134d, #281255);
-    color: #eeeeee;
-    font-size: 250%;
-    padding: 50px;
-    text-shadow: 0 0 10px $accent-light, 0 0 20px $accent-light,
-        0 0 30px $accent, 0 0 40px $accent, 0 0 50px $accent, 0 0 60px $accent,
-        0 0 70px $accent;
-    border-radius: 20px;
-    border: none;
-    filter: drop-shadow(0 0 50px $accent-dark);
-    cursor: pointer;
-    transition-duration: 0.5s;
-    width: 75vw;
-    margin: 0 auto;
-}
-
-.smallerPlayButtonsContainer {
+.playButtonsContainer {
     display: flex;
     gap: 10px;
 }
 
-.smallerPlayButtons{
+.playButtons{
     background: linear-gradient(90deg, #26134d, #281255);
     color: #eeeeee;
     font-size: 150%;
@@ -68,10 +50,25 @@ body {
     margin: 0 auto;
 }
 
-
-.bigPlayButton:hover {
-    filter: drop-shadow(0 0 100px $accent-dark);
+.playButtons:hover {
     transform: scale(1.05);
+}
+
+.smallerPlayButtons{
+    background: linear-gradient(90deg, #26134d, #281255);
+    color: #eeeeee;
+    font-size: 125%;
+    padding: 50px;
+    text-shadow: 0 0 10px $accent-light, 0 0 20px $accent-light,
+        0 0 30px $accent, 0 0 40px $accent, 0 0 50px $accent, 0 0 60px $accent,
+        0 0 70px $accent;
+    border-radius: 20px;
+    border: none;
+    filter: drop-shadow(0 0 50px $accent-dark);
+    cursor: pointer;
+    transition-duration: 0.5s;
+    width: 30vw;
+    margin: 0 auto;
 }
 
 .smallerPlayButtons:hover {

@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     gameNames.sort();
 
     // Update heading
-    heading.textContent = `An archive of ${gameNames.length} HTML5 games`;
+    heading.innerHTML = `An archive of ${gameNames.length} HTML5 games`;
 
     // Populate games
     gameNames.forEach((gameName) => {
