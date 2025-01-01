@@ -6,9 +6,9 @@ A collection of almost 400 HTML5 games with cloaking and integrated chat
 
 </div>
 
-There are currently ```396``` games in the LupineVault.
+There are currently ```400``` games in the LupineVault.
 
-[![Join Our Discord](https://img.shields.io/badge/Join%20Our-Discord-purple)](https://discord.gg/Ex2nZUWuHF) [![Netlify Status](https://api.netlify.com/api/v1/badges/9436ad01-205a-4719-bd70-005423e4f0ca/deploy-status)](https://app.netlify.com/sites/lupinevault/deploys) [![maintenance-status](https://img.shields.io/badge/maintenance-actively--developed-brightgreen.svg)](https://github.com/LupineVault/LupineVault/commits/main/)
+[![Join Our Discord](https://img.shields.io/badge/Join%20Our-Discord-purple)](https://discord.gg/Ex2nZUWuHF) [![maintenance-status](https://img.shields.io/badge/maintenance-actively--developed-brightgreen.svg)](https://github.com/LupineVault/LupineVault/commits/main/)
 
 
 ---
@@ -25,10 +25,13 @@ lupinevault.netlify.app
 ```
 learningminds.tech
 ```
+```
+sites.google.com/view/lupinevault/home
+```
 
 More to come...
 
-<sub>Pssst! Want to host an alt domain? Fork this repo (follow the instructions below), then meet [THESE](https://github.com/LupineVault/LupineVault/blob/f5b59cc4d92dce3a9fad592e2a17b6407efae7ee/altdomain.md) requirements!</sub>
+<sub>Pssst! Want to host an alt domain? Fork this repo (follow the instructions below), then meet [THESE](https://gitlab.com/tf7software/LupineVault#requirements-1) requirements!</sub>
 
 ---
 ## Contributing
