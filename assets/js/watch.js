@@ -204,9 +204,9 @@ function displayEpisodes(episodes) {
 function openIframe(id, type, season = null, episode = null) {
     let url = "";
     if (type === "movie") {
-        url = `https://vidsrc.icu/embed/movie/${id}`;
+        url = `https://vidsrc.rip/embed/movie/${id}`;
     } else if (type === "tv" && season !== null && episode !== null) {
-        url = `https://vidsrc.icu/embed/tv/${id}/${season}/${episode}`;
+        url = `https://vidsrc.rip/embed/tv/${id}/${season}/${episode}`;
     }
 
     movieIframe.src = url;
