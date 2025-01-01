@@ -1,4 +1,5 @@
 //tf7 is dumdum and made this all in chatgpt and forced me to fix it :(
+//tf7 used chatgpt because he was tired and it was 3am and his friend wanted to watch moana 2 bc hes probably gay
 
 const API_KEY = "2713804610e1e236b1cf44bfac3a7776";
 const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500";
@@ -204,9 +205,9 @@ function displayEpisodes(episodes) {
 function openIframe(id, type, season = null, episode = null) {
     let url = "";
     if (type === "movie") {
-        url = `https://vidsrc.rip/embed/movie/${id}`;
+        url = `https://vidsrc.icu/embed/movie/${id}`;
     } else if (type === "tv" && season !== null && episode !== null) {
-        url = `https://vidsrc.rip/embed/tv/${id}/${season}/${episode}`;
+        url = `https://vidsrc.icu/embed/tv/${id}/${season}/${episode}`;
     }
 
     movieIframe.src = url;
@@ -260,4 +261,3 @@ function handleSearch(event) {
 // Initialize with Movies and TV shows
 fetchContent(currentPage, searchQuery, "movie");
 fetchContent(currentPage, searchQuery, "tv");
-
