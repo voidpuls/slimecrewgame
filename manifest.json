@@ -1,0 +1,23 @@
+
+{
+    "name": "LupineVault - Free online games, movies, and TV shows",
+    "short_name": "LupineVault",
+    "start_url": "index.html",
+    "scope": "./",
+    "icons": [
+      {
+        "src": "assets/favicons/favicon.svg",
+        "sizes": "512x512",
+        "type": "image/svg"
+      },
+      {
+        "src": "assets/favicons/apple-touch-icon.png",
+        "sizes": "256x256",
+        "type": "image/png"
+      }
+    ],
+    "theme_color": "#5e17eb",
+    "background_color": "#252025",
+    "display": "standalone"
+  }
+  
