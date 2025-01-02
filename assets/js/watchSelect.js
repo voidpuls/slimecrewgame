@@ -36,7 +36,7 @@ const updateHeight = () => {
         document.documentElement.scrollHeight
     );
     seasonEpisodeExplorer.style.height = `${fullPageHeight}px`;
-    console.log("Updated height" + fullPageHeight);
+   console.log("Updated height" + fullPageHeight);
 };
 
 setInterval(updateHeight, 500);
@@ -137,6 +137,8 @@ function displayTVShows(tvShows, reset = false) {
 
 // Open Season Explorer
 async function openSeasonExplorer(tvShowId) {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
     seasonEpisodeExplorer.style.display = "flex";
     episodesContainerExplorer.innerHTML = ""; // Reset episodes container
     seasonsContainer.innerHTML = ""; // Reset seasons container
@@ -167,7 +169,7 @@ function displaySeasons(seasons, tvShowId) {
 
 // Fetch Episodes for a Season
 async function fetchEpisodes(tvShowId, seasonNumber) {
-    episodesContainer.style.display = "flex"; // Show the episodes container
+    episodesContainer.style.display = "flex" // Show the episodes container
     episodesContainer.innerHTML = ""; // Clear existing episodes before appending new ones
 
     try {
@@ -203,7 +205,12 @@ function displayEpisodes(episodes) {
 
 // Open Iframe
 function openIframe(id, type, season = null, episode = null) {
-    let url = "";
+    if (type === "movie") {
+        document.location.href = `play.html?id=${id}&type=${type}`;
+    } else if (type === "tv") {
+        document.location.href = `play.html?id=${id}&type=${type}&season=${season}&episode=${episode}`;
+    }
+    /*let url = "";
     if (type === "movie") {
         url = `https://vidsrc.icu/embed/movie/${id}`;
     } else if (type === "tv" && season !== null && episode !== null) {
@@ -211,7 +218,7 @@ function openIframe(id, type, season = null, episode = null) {
     }
 
     movieIframe.src = url;
-    overlay.style.display = "flex";
+    overlay.style.display = "flex";*/
 }
 
 // Close Iframe

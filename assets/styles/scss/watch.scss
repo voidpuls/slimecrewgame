@@ -99,9 +99,9 @@ html, body {
     overflow: hidden;
 }
 
-#movie-iframe {
-    width: 100%; /* Ensure iframe takes full width of container */
-    height: 100%; /* Ensure iframe takes full height of container */
+#movieIframe {
+    width: 100vw;
+    height: 90vh;
 }
 
 .iframe-controls {
@@ -163,7 +163,7 @@ html, body {
     backdrop-filter: blur(10px);
     z-index: 1000;
     justify-content: center;
-    align-items: flex-start;
+    //align-items: flex-start;
 }
 
 

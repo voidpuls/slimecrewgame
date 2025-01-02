@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", async function (e) {
 
     // Update the heading with the total number of games
     document.getElementById("heading").textContent =
-        "An archive of " + gameNames.length + " HTML5 games";
+        "An archive of " + gameNames.length + " games and tons of movies";
 });
 
 function openSVG() {
