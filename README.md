@@ -65,6 +65,10 @@ More to come...
 
   Contact us using [Discord](https://discord.gg/Ex2nZUWuHF)
 
+  _or_
+
+  Post a reqest on [r/LupineVault](https://www.reddit.com/r/LupineVault/) with the flair "new game"
+
 Can either be a ZIP file _or_ GitHub repo, __No download links besides GitHub__
 
 ---
