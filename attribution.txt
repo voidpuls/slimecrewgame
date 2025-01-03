@@ -1,7 +1,11 @@
 InfinityLoop (https://github.com/InfinityLoop1) - Mostly Frontend
 
-tf7software (https://github.com/tf7software) - Mostly backend & repository management
+tf7software (Github: https://github.com/tf7software Gitlab: https://gitlab.com/tf7software/) - Mostly backend & repository management
 
-Organization - LupineVault on Github (https://github.com/LupineVault/)
+Organization - LupineVault on Github (https://github.com/LupineVault/) - This is no longer up to date, as the repo has moved to GitLab
 
 Original repository - LupineVault/LupineVault on Github (https://github.com/LupineVault/LupineVault)
+
+Current repository - tf7software/LupineVault on GitLab (https://gitlab.com/tf7software/LupineVault/)
+
+© 2024-2025 tf7software, R. Henry Warren, LupineVault, Enzo Passini
