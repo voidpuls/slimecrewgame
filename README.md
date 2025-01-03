@@ -21,12 +21,19 @@ data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiID8+Cj
 
 # Alt Domains:
 
+___Official:___
 ```
 learningminds.tech
 ```
+___Unofficial:___
+```
+lupinevault-alt.onrender.com
+```
+___Embeds:___
 ```
 sites.google.com/view/lupinevault/home
 ```
+
 <sub>Over 96% of our games work on alt domains, but there are a few, such as buckshot roulette, that _may_ not work. Some official alt domains, such as learningminds.tech, and some embedding domains such as Google Sites, do not experience this issue.</sub>
 
 
