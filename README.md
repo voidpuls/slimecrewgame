@@ -20,9 +20,7 @@ data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiID8+Cj
 ```
 
 # Alt Domains:
-```
-lupinevault.netlify.app
-```
+
 ```
 learningminds.tech
 ```
